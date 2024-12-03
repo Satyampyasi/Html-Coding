@@ -1,0 +1,14 @@
+p{
+    font-size: 12px;
+}
+#mydiv{
+    background-color: rgb(198, 241, 245);
+    height: 200px;
+    width: 200px;
+    border: 1px double green;
+    border-radius: 20px;
+     border-top-left-radius: 5px;
+     padding:50px 100px;
+     box-sizing: border-box;
+     margin:auto ;
+}
