@@ -4,9 +4,6 @@ function fun(str){
  }
 }
 fun("javascript")
-
-
-
 /*=============================================================================================================*/ 
 function check(num){
 if(num%2==0) return("even");
@@ -37,4 +34,40 @@ else  return("odd");
  }
  posorneg(45)
  /*===========================================================================================================*/
- 
+  function color(num){
+     switch(num)
+    {
+       case 1:
+       console.log("violet");
+       break;
+       
+       case 2:
+        console.log("blue");
+        break;
+
+        case 3:
+        console.log("green");
+        break;
+        
+        case 4:
+        console.log("orange");
+        break;
+        
+        case 5:
+        console.log("yellow");
+        break;
+        
+        case 6:
+        console.log("red");
+        break;
+
+        case 7:
+        console.log("white");
+        break;
+
+        default:
+            console.log("mixed color")
+    }
+
+  }
+  color(50)
