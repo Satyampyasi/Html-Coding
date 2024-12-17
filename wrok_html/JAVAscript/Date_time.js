@@ -65,4 +65,6 @@ this.age=b;
 this.hobby=c;
 this.school=d;
 }
-var obj= new fullinformation( )
+var obj= new fullinformation( "satya565","21","basketball","jnv");
+var obj2 =new fullinformation("ramkrishn","25","circket","kvs");
+console.log(obj2.Name);

@@ -1,0 +1,44 @@
+documnet is model :
+documen t is an object created by broser defoult and it contain replica 
+of tha element as a tree structure
+documnet can be selceted can be manipulated tha wenb pages 
+There are three phase of Dom:
+How do you select :
+
+Phase 1: Dom selction
+======================
+
+There are 5 basic way to select an elemnet from dom/html:
+i> documnet.getElementByTagName('tag'):
+it selceted all tha elemnt of specific tag from Dom tree and 
+return an array of element (HTMl collection)
+
+ii> document.getElementByClassName('')
+it selcete All tha element of spesicfic classname from Dom tree and return an array of element 
+with specific class name
+eg:= var x = getElementByClassName('myclass');
+console.log(x);
+
+iii> document.getElementbyId('Idname'):
+it select an element of specific id and return it
+eg:= var x=documnet.getElementbyId('idname');
+console.log(x);
+
+iv> documen.queryselector('query'):
+it select an element of specific query and return only first element.
+eg:= var y=document.queryselector('#para')
+console.log(y)
+
+v>document.queryselectorAll('#para')
+it selcete an element of specific query but it return all the element that match tha query
+eg:= var E=document.queryselectorAll('#para')
+console.log(E);
+
+
+Phase 2: Dom manipulation :
+we can manipulate any DOM elements using few methods such as 
+1> textContent: it bring the text inside the selctedd element .
+
+
+
+
