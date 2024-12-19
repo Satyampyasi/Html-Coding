@@ -21,9 +21,11 @@ var mydata4 = document.querySelector('#paragraph')
     val++;
     mydata5.textContent=val}
 
-    var inc=0;
     function fullform(){
         var mydata6= document.getElementById('value');
-        inc++;
         mydata6.textContent = "American standard of information interchange"
     }
+    /*    
+    <button onclick="change()"> click me +</button>
+    <h1 id="head">0</h1>
+ */

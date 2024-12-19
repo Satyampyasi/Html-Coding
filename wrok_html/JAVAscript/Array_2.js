@@ -41,7 +41,8 @@ const x= sparray.find( function(number){return  number%2==0})
 console.log(x);
 
 var price=[2,4,6,8]
-const total= price.reduce(function(pre,cur){return pre+cur },0)
+const total= price.reduce(function(pre,cur)
+{return pre+cur },0)
 console.log(total);
 
 let score=1000
