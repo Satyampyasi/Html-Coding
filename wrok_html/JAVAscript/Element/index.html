@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h3 id="images">
+    <p1> This is a monkey </p1><br>
+    <p1>This is a lion </p1><br>
+    <p id="owl">This is a owl</p>
+    <p id="google"><a href="https://www.google.com/">This is a gooogle</a> </p>
+</h3>
+     <script>
+
+
+document.getElementById('images').addEventListener('click',function(e){
+console.log("Clicked insdie the h3");
+},false)
+
+document.getElementById('owl').addEventListener('click',function(e){
+console.log(" Owl Clicked");
+e.stopPropagation()
+},false)
+
+document.getElementById('google').addEventListener('click',function(e){
+    e.preventDefault();
+    e.stopPropagation()
+    console.log("google clicked");
+
+},false)
+
+
+
+     </script>
+     <!-- defoultPrevent stop that from running  -->
+      <!-- ==bubble event== in this first our child print after that  -->
+       <!-- parents print  2>  ==captiring event== true. -->
+</body>
+
+</html>
