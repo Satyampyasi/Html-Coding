@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main-container{
+        background-color: rgb(162, 102, 102);
+        
+        height: 100vh;;
+        
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       margin: 200px ,auto ;
+       
+    }
+    .container{
+        background-color: rgb(178, 178, 158);
+        display: flex;
+        align-items: flex-end;
+        justify-content:center;
+        padding:30px;
+        gap: 30px;
+        height: 300px;
+        width: 300px;
+    }  
+    .button{
+        height:50px;
+        width:50px;
+    }
+    .final{
+        background-color: rgb(178, 178, 158);
+        padding: 30px;
+    }
+    
+  
+</style>
+<body>
+   <div class="main-container">
+    <div class=" final">
+        <h1 id="digit">0</h1>
+        <div class="container">
+       <button type=" button" class="button" onclick="sum()">+</button>
+       <button type="reset" class="button" onclick="reset()">Reset</button>
+        <button type="button" class="button" onclick="sub()">-</button>
+        
+    </div>
+    </div>
+
+</div>
+<script src="05Dyanamic.js"></script>
+</body>
+</html>
