@@ -39,6 +39,10 @@ Phase 2: Dom manipulation :
 we can manipulate any DOM elements using few methods such as 
 1> textContent: it bring the text inside the selctedd element .
 
+==============PROMISE========================================
+Every Asynchronous actually return Promise 
+Apromise is an object to describe an Eventual completion Asynchronous operation.
+
 
 
 
