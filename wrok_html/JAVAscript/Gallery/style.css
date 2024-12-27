@@ -1,11 +1,82 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-.main{
-    background-color: rgb(18, 18, 23);
-    height: 600px;
-    width:800px
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
+body {
+    font-family: sans-serif; /* Use a default sans-serif font */
+    background-color: #f0f0f0; /* Light gray background for the body */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    min-height: 100vh; /* Ensure body takes up full viewport height */
+}
+
+.main {
+    background-color: rgb(95, 95, 224);
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the main container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+    max-width: 900px; /* Set a maximum width for larger screens */
+    width: 90%; /* Occupy 90% of the viewport width */
+}
+
+#main-image {
+    grid-row: 1;
+    grid-column: 1 / -1; /* Span all columns */
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer; /* Indicate clickable elements */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions for hover effects */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white; /* Set text color to white */
+    font-weight: bold; /* Make the text bold */
+    font-size: 1.2em;
+    overflow: hidden; /* Hide overflowing content (if any) */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+/* Specific background images for boxes (optional) */
+#one {
+    background-image: url(https://imgs.search.brave.com/KduDENJNdZxVRbqyPrrmLxCJ5CmpebW5IH-Arv4BVnE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnNz/dGF0aWMubmV0L0o0/dkRjLmpwZw);
+    background-size: cover;
+    background-position: center;
+}
+
+#two {
+    background-image: url(https://imgs.search.brave.com/XSXGzGvgEDdc1K1LXOsrERi_JNb6Qf7zb3wBlo5wQ7s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d29ybGRhdGxhcy5j/b20vci93NzY4L3Vw/bG9hZC9kOC82NS84/ZC9zaHV0dGVyc3Rv/Y2stMTA0OTg5NjU5/Mi5qcGc);
+    background-size: cover;
+    background-position: center;
+}
+
+#three {
+    background-image: url(https://imgs.search.brave.com/UlV4V6mRkVRY-7s4feK4-0Dri24QdMF46Q8HweU9iWc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ5/NDE4MjQ1NC9waG90/by9tYXR0ZXJob3Ju/LW1vdW50YWluLXdp/bnRlci12aWV3Lmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1I/Z0czaGo0NGdNY0xj/NjhFV3hmU3lrQUhm/TFlsM3Jmdzl3a1Bx/U1ZPZnNJPQ);
+    background-size: cover;
+    background-position: center;
+}
+
+#four {
+    background-image: url(https://imgs.search.brave.com/bg-7lQcermfBj1OPWksQuf-JasPP8Dk7lpwRQi3-b6E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODI0/NjU1OTc2L3Bob3Rv/L2N1cnZlZC1yb2Fk/LWluLWRyYW1hdGlj/LW1vdW50YWluLXJh/bmdlLWRvbG9taXRl/cy1pdGFseS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9V3VV/dTQ3V2RreG1TZXlQ/MTd6b2JMX3ZqSm1R/cURkVlJneldpLU5i/MFphbz0);
+    background-size: cover;
+    background-position: center;
+}

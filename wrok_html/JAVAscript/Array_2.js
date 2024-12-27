@@ -1,6 +1,4 @@
-// const marvel_heroes =["thor","ironman","spiderman"]
-// const dc_heroes =["superman","flash","batman"]
-// marvel_heroes.push(dc_heroes)
+
 // console.log(marvel_heroes);
 // console.log(marvel_heroes[3][1]);
 
@@ -49,3 +47,6 @@ let score=1000
 let score1=102
 let score2=455
 console.log(Array.of(score,score1,score2));
+const marvel_heroes =["thor","ironman","spiderman"]
+const dc_heroes =["superman","flash","batman"]
+marvel_heroes.push(dc_heroes)

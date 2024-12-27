@@ -1,6 +1,6 @@
 
 let digit = document.getElementById('digit')
-let Ques = document.getElementById('Ques')
+
 function op1(answer){
   let correct = "INDIA"
   if(answer === correct){
@@ -13,10 +13,12 @@ function op1(answer){
   }
 }
 function reset(){
-    digit.textContent='-------'
+    digit.textContent=' '
+    digit.style.color='black';
 }
 
 
+ 
   
 
   
