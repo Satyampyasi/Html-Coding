@@ -43,6 +43,30 @@ we can manipulate any DOM elements using few methods such as
 Every Asynchronous actually return Promise 
 Apromise is an object to describe an Eventual completion Asynchronous operation.
 
+// const factElement = document.querySelector('.fact');
+// const button = document.querySelector('.button');
+const factElement = document.getElementById('fact');
+const button = document.getElementById('button');
 
+// button.addEventListener('click', async()=>{   });
+// button.addEventListener('click', function(){   });
+ button.addEventListener('click', getfacts);
+
+//   const getfacts = async()=>{}
+    const getfacts = async function()
+{
+    try {
+        const response = await fetch("https://dummyjson.com/quotes/random");
+        const data = await response.json();
+        factElement.textContent = data.quote;
+    } catch (error) {
+        console.error("An error occurred:", error);
+    }
+
+}
+
+
+// btn.addEventListener('click', fetchData)
+// function async fetchData ()
 
 

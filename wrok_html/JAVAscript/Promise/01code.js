@@ -31,7 +31,7 @@ promiseThree
     console.log(userdata)
 })
 
-const promisefour = new Promise(function(resolve,reject){
+const promisefour= new Promise(function(resolve,reject){
     setTimeout(function(){
         let error = true /* This mean error is present */ 
        if(!error){
