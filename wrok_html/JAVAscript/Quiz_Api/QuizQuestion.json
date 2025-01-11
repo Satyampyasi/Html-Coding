@@ -1,38 +1,205 @@
 {
-     "quiz": [ 
-          {
-               "queastion":"What is a correct sysntax to print in console in js?",
-                "options":[
-                    "print('Hello World!')",
-                     "echo('Hello World!')",
-                    "console.log('Hello World!')",
-                    "log.console('Hello World!')"
-
-                ],
-                "correct_option": "console.log('Hello World!')"
-
-          },
-          {
-              "queastion":"use to define variable in js?",
-              "options":[
-               "let",
-               "var",
-               "const",
-               "All of the above"
-              ],
-              "correct_option":"All of the above"
-          },
-          {
-               "queastion":"Which is a example of js array",
-               "options":[
-                    "[1, 2, 3]",
-                    "{1, 2, 3}",
-                    "(1, 2, 3)",
-                    "<1, 2, 3>"
-               ],
-               "correct_option":"[1, 2, 3]"
-          }
-
+     "quiz": [
+         {
+             "question": "What is the correct way to declare a JavaScript function?",
+             "options": [
+                 "function = myFunction()",
+                 "function myFunction()",
+                 "let myFunction = function",
+                 "myFunction():function"
+             ],
+             "correct_option": "function myFunction()"
+         },
+         {
+             "question": "Which method is used to remove the last element of an array in JavaScript?",
+             "options": [
+                 "pop()",
+                 "shift()",
+                 "removeLast()",
+                 "delete()"
+             ],
+             "correct_option": "pop()"
+         },
+         {
+             "question": "How do you write an IF statement in JavaScript?",
+             "options": [
+                 "if i == 5 then",
+                 "if (i == 5)",
+                 "if i = 5",
+                 "if (i === 5) then"
+             ],
+             "correct_option": "if (i == 5)"
+         },
+         {
+             "question": "How can you add a comment in JavaScript?",
+             "options": [
+                 "// This is a comment",
+                 "/* This is a comment */",
+                 "<!-- This is a comment -->",
+                 "Both // and /* */"
+             ],
+             "correct_option": "Both // and /* */"
+         },
+         {
+             "question": "Which method converts a JSON object to a string?",
+             "options": [
+                 "JSON.stringify()",
+                 "JSON.parse()",
+                 "JSON.toString()",
+                 "JSON.convert()"
+             ],
+             "correct_option": "JSON.stringify()"
+         },
+         {
+             "question": "Which of the following is not a reserved keyword in JavaScript?",
+             "options": [
+                 "interface",
+                 "throws",
+                 "program",
+                 "enum"
+             ],
+             "correct_option": "program"
+         },
+         {
+             "question": "What is the output of 3 + 2 + '7' in JavaScript?",
+             "options": [
+                 "12",
+                 "57",
+                 "NaN",
+                 "TypeError"
+             ],
+             "correct_option": "57"
+         },
+         {
+             "question": "Which operator is used to assign a value to a variable in JavaScript?",
+             "options": [
+                 "=",
+                 "==",
+                 "===",
+                 "!="
+             ],
+             "correct_option": "="
+         },
+         {
+             "question": "What does `typeof` operator return for an array in JavaScript?",
+             "options": [
+                 "'array'",
+                 "'object'",
+                 "'list'",
+                 "'undefined'"
+             ],
+             "correct_option": "'object'"
+         },
+         {
+             "question": "What is the correct way to check if a variable `x` is an array?",
+             "options": [
+                 "x instanceof Array",
+                 "Array.isArray(x)",
+                 "typeof x === 'array'",
+                 "Both x instanceof Array and Array.isArray(x)"
+             ],
+             "correct_option": "Both x instanceof Array and Array.isArray(x)"
+         },
+         {
+             "question": "Which method is used to join two or more arrays?",
+             "options": [
+                 "join()",
+                 "concat()",
+                 "combine()",
+                 "merge()"
+             ],
+             "correct_option": "concat()"
+         },
+         {
+             "question": "Which keyword is used to create a JavaScript class?",
+             "options": [
+                 "class",
+                 "function",
+                 "constructor",
+                 "new"
+             ],
+             "correct_option": "class"
+         },
+         {
+             "question": "What does the `isNaN()` function do?",
+             "options": [
+                 "Checks if a value is a number",
+                 "Checks if a value is not a number",
+                 "Converts a value to a number",
+                 "Returns true if a value is numeric"
+             ],
+             "correct_option": "Checks if a value is not a number"
+         },
+         {
+             "question": "Which of the following is not a primitive data type in JavaScript?",
+             "options": [
+                 "String",
+                 "Number",
+                 "Object",
+                 "Boolean"
+             ],
+             "correct_option": "Object"
+         },
+         {
+             "question": "What is the output of `typeof null` in JavaScript?",
+             "options": [
+                 "'null'",
+                 "'object'",
+                 "'undefined'",
+                 "'number'"
+             ],
+             "correct_option": "'object'"
+         },
+         {
+             "question": "Which method is used to find the index of an element in an array?",
+             "options": [
+                 "findIndex()",
+                 "indexOf()",
+                 "search()",
+                 "getIndex()"
+             ],
+             "correct_option": "indexOf()"
+         },
+         {
+             "question": "Which JavaScript function is used to delay code execution?",
+             "options": [
+                 "setTimeout()",
+                 "setInterval()",
+                 "wait()",
+                 "delay()"
+             ],
+             "correct_option": "setTimeout()"
+         },
+         {
+             "question": "Which of the following is a falsy value in JavaScript?",
+             "options": [
+                 "0",
+                 "null",
+                 "undefined",
+                 "All of the above"
+             ],
+             "correct_option": "All of the above"
+         },
+         {
+             "question": "Which method is used to remove whitespace from both ends of a string?",
+             "options": [
+                 "trim()",
+                 "slice()",
+                 "cut()",
+                 "strip()"
+             ],
+             "correct_option": "trim()"
+         },
+         {
+             "question": "How do you declare a constant in JavaScript?",
+             "options": [
+                 "let constName",
+                 "var constName",
+                 "const constName",
+                 "constant constName"
+             ],
+             "correct_option": "const constName"
+         }
      ]
-
-}
+ }
+ 

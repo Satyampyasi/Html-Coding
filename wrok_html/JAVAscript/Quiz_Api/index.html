@@ -3,31 +3,41 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <title>Quiz Application</title>
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="container">
-      <p class="ques"></p>
-       <form>
-          <div class="arrang">
-          <label for="html" class="op1"></label>
-          <input type="radio" id="html" name="quiz">
-
-          <label for="html2" class="op2"></label>
-          <input type="radio" id="html2"name="quiz">
-
-          <label for="html3" class="op3"></label>
-          <input type="radio" id="html3"name="quiz">
-
-          <label for="html4" class="op4"></label>
-          <input type="radio" id="html4"name="quiz">
-          
-          <button class="btn" type="submit">Submit</button>
-          <button class="btn2" type="button">Next</button>
-         </div>
-       </form>
+     <div class="main">
+          <div class="Qus">Click on Question to start Quiz</div>
+          <div class="container"> 
+               <h2 id="first">Ans------------------------</h2>
+               <h2 id="secound">Correct Ans---------------</h2>
+               <h3 style="color: blue;" id="sahi"></h3>
+               <h4 style="color: red;" id="galat"></h4>
+               <label id="r1">
+                    <input type="radio" id="rd1" name="quiz">
+                    <span id="label1">Option 1</span>
+               </label>
+               <label id="r2">
+                    <input type="radio" id="rd2" name="quiz">
+                    <span id="label2">Option 2</span>
+               </label>
+               <label id="r3">
+                    <input type="radio" id="rd3" name="quiz">
+                    <span id="label3">Option 3</span>
+               </label>
+               <label id="r4">
+                    <input type="radio" id="rd4" name="quiz">
+                    <span id="label4">Option 4</span>
+               </label>
+          </div>
+          <div class="bottom">
+               <button class="btn">Submit Answer:</button>
+               <button class="next" style="display: none;">Question></button>
+               <h2 id="marks"></h2>
+          </div>
      </div>
+     
      <script src="script.js"></script>
 </body>
 </html>
