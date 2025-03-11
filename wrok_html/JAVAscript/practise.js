@@ -33,3 +33,11 @@ a();
 }
 abcd(function(){console.log("hello");})
 /* This is called first class function */ 
+
+const sat = ()=>{
+      console.log("hello");
+}
+   const chang = setTimeout(sat,2000);
+
+   clearTimeout(chang);
+

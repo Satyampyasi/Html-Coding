@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <!-- <h3>demo of documnet object model</h3>
+     <h1 id="heading">hello</h1>
+     <input type="text" class="c" value="1000"> -->
+     
+      <h1>Demo on dom event</h1>
+     <button id="bt1">push here</button>
+     <button id="bt2">pull here</button>
+     <br>
+  
+     <div align ="center"> 
+          <h2 style="border: 2px solid black;"> Dom implementation</h2>
+          <textarea id="msg"  style="height: 200px; width: 350px; font-size: larger;"  >
+
+     </textarea><br>
+     <button id="bold"> B </button>
+     <button id="em">I</button>
+     <button id="ul">U</button>
+     <button id="str">S</button>
+     <button id="al">left</button>
+     <button id="centre">centre</button>
+     <button id="righ">RIght</button>
+     <input type="color">
+
+     </div>
+    
+     <script>
+
+     const tb = document.getElementById("msg").style;
+     document.getElementById("bold").onclick = ()=>{
+          if(tb.fontWeight==="bold"){
+              tb.fontWeight="normal";
+          }
+          else{
+             tb.fontWeight ="bold";
+          }
+          
+     };
+
+     document.getElementById("em").addEventListener("click",()=>{
+          if(tb.fontStyle==="italic"){
+          tb.fontStyle="normal";}
+
+          else{
+               tb.fontStyle="italic"
+          }
+
+     })
+      
+         document.getElementById("ul").addEventListener("click",()=>{
+           if(tb.textDecoration==="underline"){
+                tb.textDecoration="none";
+           }
+           else{
+               tb.textDecoration="underline";
+           }
+     })
+
+
+     document.getElementById("str").onclick =()=>{
+          if(tb.textDecoration==="line-through"){
+                tb.textDecoration="none";
+          }
+          else{
+              tb.textDecoration="line-through";
+          }
+     }
+
+     document.getElementById("al").onclick = ()=>{tb.textAlign="left";}
+
+     document.getElementById("centre").onclick= ()=>tb.textAlign="centre";
+     document.getElementById("rght").onclick= ()=>tb.textAlign="right";
+     document.getElementById("color").onclick
+
+
+
+
+
+
+
+
+
+
+
+
+
+      const b1 = document.getElementById("bt1");
+      b1.addEventListener("click",()=>{
+            alert("button pushed")
+      })
+
+      const b2 = document.getElementById("bt2");
+     //  b1.style.color= red;
+      
+
+
+      b2.onclick = ()=>{
+        alert("button pulled");
+      }
+
+
+
+          // const obj1= document.getElementById("heading");
+          // document.write(`${obj1}<br>`);
+          // obj1.innerHTML = " good morning";
+          // obj2.innerHTML = "";
+     
+          // const ob2= document.querySelector(".c");
+
+     </script>
+</body>
+</html>

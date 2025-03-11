@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h1> Chai or code  </h1>
+      <h2 id="incre">0</h2>
+     <button id="stop">Stop</button>
+     <button id="start">Start</button>
+     <script>
+          let counter = 0;;
+          var incre = document.getElementById("incre");
+          const str = document.getElementById("start");
+
+          str.addEventListener("click",()=>{
+          const done = function(){
+          console.log("satyam");
+          counter++;
+          incre.textContent = counter;
+         }
+          let stopit = setInterval(done,2000);
+          });
+         
+          const stp = document.getElementById("stop");
+          stp.addEventListener("click",()=>{
+          clearInterval(stopit);
+          });
+   
+     </script>
+</body>
+</html>
