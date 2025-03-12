@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <div id="main">
+          <div style="text-align: center;">
+               <h1>Ice cream</h1>
+               <h3>Ice cream price = $10</h3>
+          </div>
+          
+          <img src="https://media.gettyimages.com/id/157472912/photo/ice-cream-composition-on-a-bowl.jpg?s=612x612&w=gi&k=20&c=AniWX1OhaarUxCkgjUoKiA3bKVllK0upCylW6Z0PCMQ=">
+          <div style="text-align: center;">
+               <button id="decre">-</button>
+               <input type="text" id="qty" value="0" readonly>
+               <button id="incre">+</button>
+               <br>
+               <output id="iteamTot">Item Total = $0</output>
+               <br>
+               <output id="gst">GST = $0</output>
+               <br>
+               <output id="totamount">Total Pay = $0</output>
+          </div>
+     </div>
+     
+     <style>
+          body {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 100vh;
+               margin: 0;
+          }
+          #main {
+               height: 500px;
+               width: 400px;
+               border: 2px solid black;
+               text-align: center;
+          }
+          img {
+               object-fit: cover;
+               height: 60%;
+               width: 100%;
+          }
+     </style>
+
+     <script>
+          const pri = 10; // Price of ice cream
+          const gstrate = 0.18; // GST rate
+
+          // Decrease quantity
+          document.getElementById("decre").onclick = () => {
+               const qtyInput = document.getElementById("qty");
+               if (+qtyInput.value > 0) {
+                    qtyInput.value--;
+                    compute();
+               }
+          };
+
+          // Increase quantity
+          document.getElementById("incre").onclick = () => {
+               const qtyInput = document.getElementById("qty");
+               qtyInput.value++;
+               compute();
+          };
+
+         
+          function compute() {
+               const qty = document.getElementById("qty").value;
+               const itemTotal = pri * qty; // **Consistency in variable name (itemTotal)**
+               const gst = itemTotal * gstrate;
+               const totamount = itemTotal + gst;
+
+               
+               document.getElementById("iteamTot").textContent = `Item Total = $${itemTotal.toFixed(2)}`; 
+               document.getElementById("gst").textContent = `GST = $${gst.toFixed(2)}`; 
+               document.getElementById("totamount").textContent = `Total Pay = $${totamount.toFixed(2)}`; 
+          }
+     </script>
+</body>
+</html>
