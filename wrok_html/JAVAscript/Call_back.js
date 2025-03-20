@@ -19,3 +19,27 @@ let   stocks ={
 
 let is_shop_open = true;
 
+let topping = ()=>{
+  return new Promise((resolve, reject) => {
+     setTimeout(()=>{
+          console.log("Which topping would you want?");
+     },3000)
+  });
+
+};
+
+async function kitchen(){
+     console.log("a")
+     console.log("b")
+     console.log("c")
+     await topping()
+     console.log("d")
+     console.log("e")
+}
+kitchen()
+console.log("doing dises")
+console.log("cleaning tha tables")
+console.log("taking other order")
+
+ 
+
